@@ -1,2 +1,5 @@
-resolver: lts-20.25 # GHC 9.2.8
-install-ghc: true
+resolver: lts-22.27 # GHC 9.6.5
+allow-newer: true
+nix:
+  enable: true
+  packages: [zlib.dev, zlib.out, pkg-config, haskell.compiler.ghc965]
